@@ -1,6 +1,6 @@
 export const constants = {
   font: {
-    size: 14,
+    size: 15,
     family: {
       script: `'Rouge Script', cursive`,
       serif: `'Literata', --apple-system, blinkmacsystemfont, 'Segoe UI',

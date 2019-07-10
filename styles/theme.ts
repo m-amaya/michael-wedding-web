@@ -32,7 +32,21 @@ export const theme = {
     background: colors.lightgrey,
     text: colors.black,
   },
+  title: {
+    text: colors.darkgrey,
+    subtle: colors.grey,
+  },
+  border: {
+    color: colors.green,
+    accent: colors.gold,
+  },
   link: {
     text: colors.gold,
+  },
+  header: {
+    background: colors.white,
+  },
+  content: {
+    background: colors.white,
   },
 };
