@@ -1,10 +1,13 @@
+import { App } from 'app/App';
 import { configure } from 'mobx';
 import { enableLogging } from 'mobx-logger';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from 'app/App';
+import { GlobalStyles } from 'styles/GlobalStyles';
 
-//* Configure MobX
+/**
+ * MobX configuration
+ */
 configure({ enforceActions: 'observed' });
 
 if (process.env.NODE_ENV !== 'production') {
@@ -16,5 +19,13 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-//* Bootstrap React app
-ReactDOM.render(<App />, document.getElementById('app'));
+/**
+ * Bootstrap
+ */
+ReactDOM.render(
+  <>
+    <GlobalStyles />
+    <App />
+  </>,
+  document.getElementById('app'),
+);
