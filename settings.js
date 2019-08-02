@@ -25,6 +25,7 @@ const PATHS = {
     services: resolve(ROOT, 'services'),
     store: resolve(ROOT, 'store'),
     styles: resolve(ROOT, 'styles'),
+    utils: resolve(ROOT, 'utils'),
   },
   root: ROOT,
   output: OUTPUT,

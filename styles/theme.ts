@@ -41,7 +41,8 @@ export const theme = {
     accent: colors.gold,
   },
   link: {
-    text: colors.gold,
+    background: colors.green,
+    text: colors.white,
   },
   header: {
     background: colors.white,

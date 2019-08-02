@@ -11,7 +11,7 @@ const styles = css({
     'fontWeight': style.constants.font.weight.regular,
     'letterSpacing': '0.01em',
     'lineHeight': 1.43,
-    'minWidth': style.constants.breakpoint.sm,
+    'minWidth': style.constants.breakpoint.lg,
     'overflowX': 'auto',
     'overflowY': 'auto',
     'width': '100%',

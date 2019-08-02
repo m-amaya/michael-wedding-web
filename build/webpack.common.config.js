@@ -4,16 +4,17 @@ const { NamedModulesPlugin, EnvironmentPlugin } = require('webpack');
 const { PATHS } = require('../settings');
 
 module.exports = {
-  entry: { app: [ 'react-hot-loader/patch', PATHS.entry] },
+  entry: { app: ['react-hot-loader/patch', PATHS.entry] },
   resolve: {
     alias: {
       'react-dom': '@hot-loader/react-dom',
-      app: PATHS.src.app,
-      assets: PATHS.src.assets,
-      settings: PATHS.src.settings,
-      services: PATHS.src.services,
-      store: PATHS.src.store,
-      styles: PATHS.src.styles,
+      'app': PATHS.src.app,
+      'assets': PATHS.src.assets,
+      'settings': PATHS.src.settings,
+      'services': PATHS.src.services,
+      'store': PATHS.src.store,
+      'styles': PATHS.src.styles,
+      'utils': PATHS.src.utils,
     },
     extensions: ['.js', '.ts', '.tsx'],
   },

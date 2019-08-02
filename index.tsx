@@ -3,6 +3,8 @@ import { configure } from 'mobx';
 import { enableLogging } from 'mobx-logger';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Store, StoreContext } from 'store';
+import { style, StyleContext } from 'styles';
 import { GlobalStyles } from 'styles/GlobalStyles';
 
 /**
@@ -20,12 +22,28 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 /**
+ * Setup
+ */
+const store = new Store();
+
+/**
+ * Context Providers
+ */
+const Providers: React.FC = ({ children }) => (
+  <StoreContext.Provider value={store}>
+    <StyleContext.Provider value={style}>{children}</StyleContext.Provider>
+  </StoreContext.Provider>
+);
+
+/**
  * Bootstrap
  */
 ReactDOM.render(
   <>
     <GlobalStyles />
-    <App />
+    <Providers>
+      <App />
+    </Providers>
   </>,
   document.getElementById('app'),
 );

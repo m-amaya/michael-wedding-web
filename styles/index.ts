@@ -4,5 +4,5 @@ import { theme } from './theme';
 
 export const style = { constants, theme };
 
-const StyleContext = React.createContext(style);
+export const StyleContext = React.createContext(style);
 export const useStyle = () => React.useContext(StyleContext);
